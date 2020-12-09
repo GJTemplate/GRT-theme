@@ -5,22 +5,16 @@ namespace YOOtheme;
 return [
 
     'theme' => function () {
-
         return [
-
-            'name' => 'YOOtheme',
-
+//            'name' => 'YOOtheme',
+            'name' => 'VISUALtheme',
             'version' => '2.3.21',
-
             'url' => Url::to(__DIR__),
-
             'rootDir' => __DIR__,
-
             'menus' => [
                 'navbar' => 'Navbar',
                 'mobile' => 'Mobile'
             ],
-
             'positions' => [
                 'toolbar-left' => 'Toolbar Left',
                 'toolbar-right' => 'Toolbar Right',
@@ -39,41 +33,28 @@ return [
                 'builder-5' => 'Builder 5',
                 'builder-6' => 'Builder 6'
             ],
-
             'styles' => [
-
                 'imports' => [
                     Path::get('./vendor/assets/uikit/src/images/backgrounds/*.svg'),
                     Path::get('./vendor/assets/uikit-themes/*/images/*.svg'),
                 ]
-
             ],
-
             'defaults' => [
-
                 'menu' => [
                     'positions' => [
                         'navbar' => '',
                         'mobile' => '',
                     ]
                 ]
-
             ]
-
         ];
-
     },
 
     'config' => function () {
-
         return [
-
             'image' => [
                 'cacheDir' => Path::get('./cache')
             ]
-
         ];
-
     },
-
 ];

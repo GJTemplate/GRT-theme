@@ -452,7 +452,7 @@ if (preg_match('/^(offcanvas|modal)/', $layout)) :
 
                             <a class="uk-navbar-toggle" href="#tm-navbar" uk-toggle>
                                 <?php if ($config('~navbar.toggle_text')) : ?>
-                                <span class="uk-margin-small-right"><?= JText::_('TPL_YOOTHEME_MENU') ?></span>
+                                <span class="uk-margin-small-right"><?= JText::_('TPL_VISUALTHEME_MENU') ?></span>
                                 <?php endif ?>
                                 <div uk-navbar-toggle-icon></div>
                             </a>

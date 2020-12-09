@@ -55,16 +55,16 @@ switch ($args['format']) {
     default: // sentence
 
         if ($author && $published) {
-            Text::printf('TPL_YOOTHEME_META_AUTHOR_DATE', $author, $published);
+            Text::printf('TPL_VISUALTHEME_META_AUTHOR_DATE', $author, $published);
         } elseif ($author) {
-            Text::printf('TPL_YOOTHEME_META_AUTHOR', $author);
+            Text::printf('TPL_VISUALTHEME_META_AUTHOR', $author);
         } elseif ($published) {
-            Text::printf('TPL_YOOTHEME_META_DATE', $published);
+            Text::printf('TPL_VISUALTHEME_META_DATE', $published);
         }
 
         if ($category) {
             echo ' ';
-            Text::printf('TPL_YOOTHEME_META_CATEGORY', $category);
+            Text::printf('TPL_VISUALTHEME_META_CATEGORY', $category);
         }
 }
 

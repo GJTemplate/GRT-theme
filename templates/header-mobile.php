@@ -72,13 +72,13 @@ if ($this->countModules('mobile')) {
                 <a class="uk-navbar-toggle" href="#tm-mobile" uk-toggle<?= ($config('~mobile.animation') == 'dropdown') ? '="animation: true"' : '' ?>>
                     <div uk-navbar-toggle-icon></div>
                     <?php if ($config('~mobile.toggle_text')) : ?>
-                        <span class="uk-margin-small-left"><?= JText::_('TPL_YOOTHEME_MENU') ?></span>
+                        <span class="uk-margin-small-left"><?= JText::_('TPL_VISUALTHEME_MENU') ?></span>
                     <?php endif ?>
                 </a>
                 <?php endif ?>
 
                 <?php if ($config('~mobile.search') == 'left') : ?>
-                <a class="uk-navbar-item"><?= JText::_('TPL_YOOTHEME_SEARCH') ?></a>
+                <a class="uk-navbar-item"><?= JText::_('TPL_VISUALTHEME_SEARCH') ?></a>
                 <?php endif ?>
 
             </div>
@@ -97,13 +97,13 @@ if ($this->countModules('mobile')) {
             <div class="uk-navbar-right">
 
                 <?php if ($config('~mobile.search') == 'right') : ?>
-                <a class="uk-navbar-item"><?= JText::_('TPL_YOOTHEME_SEARCH') ?></a>
+                <a class="uk-navbar-item"><?= JText::_('TPL_VISUALTHEME_SEARCH') ?></a>
                 <?php endif ?>
 
                 <?php if ($config('~mobile.toggle') == 'right') : ?>
                 <a class="uk-navbar-toggle" href="#tm-mobile" uk-toggle<?= $config('~mobile.animation') == 'dropdown' ? '="animation: true"' : '' ?>>
                     <?php if ($config('~mobile.toggle_text')) : ?>
-                        <span class="uk-margin-small-right"><?= JText::_('TPL_YOOTHEME_MENU') ?></span>
+                        <span class="uk-margin-small-right"><?= JText::_('TPL_VISUALTHEME_MENU') ?></span>
                     <?php endif ?>
                     <div uk-navbar-toggle-icon></div>
                 </a>

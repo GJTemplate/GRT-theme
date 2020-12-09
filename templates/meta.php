@@ -68,15 +68,15 @@ if ($published || $author || $category) {
                 <?php
 
                 if ($author && $published) {
-                    Text::printf('TPL_YOOTHEME_META_AUTHOR_DATE', $author, $published);
+                    Text::printf('TPL_VISUALTHEME_META_AUTHOR_DATE', $author, $published);
                 } elseif ($author) {
-                    Text::printf('TPL_YOOTHEME_META_AUTHOR', $author);
+                    Text::printf('TPL_VISUALTHEME_META_AUTHOR', $author);
                 } elseif ($published) {
-                    Text::printf('TPL_YOOTHEME_META_DATE', $published);
+                    Text::printf('TPL_VISUALTHEME_META_DATE', $published);
                 }
 
                 ?>
-                <?= $category ? Text::sprintf('TPL_YOOTHEME_META_CATEGORY', $category) : '' ?>
+                <?= $category ? Text::sprintf('TPL_VISUALTHEME_META_CATEGORY', $category) : '' ?>
             </p>
         <?php
     }

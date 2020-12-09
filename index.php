@@ -79,6 +79,7 @@ $attrs_main_section['class'][] = $layout == 'blog' && $config('~theme.blog.paddi
 $attrs_main_section['class'][] = $layout == 'post' && $config('~theme.post.padding') ? "uk-section-{$config('~theme.post.padding')}" : '';
 $attrs_main_section['class'][] = $layout == 'post' && $config('~theme.post.padding_remove') ? 'uk-padding-remove-top' : '';
 
+
 // Main container
 $attrs_main_container = [];
 
@@ -106,7 +107,12 @@ if ($layout == 'post') {
     </head>
     <body class="<?= join(' ', (array) $config('~theme.body_class')) ?>">
 
-        <?php if ($config('~site.layout') == 'boxed') : ?>
+        <?php
+
+
+
+
+            if ($config('~site.layout') == 'boxed') : ?>
         <div<?= $view->attrs($attrs_page_container) ?>>
 
             <?php if ($attrs_image) : ?>
@@ -114,14 +120,24 @@ if ($layout == 'post') {
             <?php endif ?>
 
             <?php if ($attrs_media_overlay) : ?>
-            <div class="uk-position-cover"<?= $view->attrs($attrs_media_overlay) ?>></div>
+                <div class="uk-position-cover"<?= $view->attrs($attrs_media_overlay) ?>></div>
             <?php endif ?>
 
         <?php endif ?>
 
         <?php if ($config('~site.layout') == 'boxed' && $config('~site.boxed.header_outside')) : ?>
         <?= $view('~theme/templates/header') ?>
-        <?php endif ?>
+        <?php endif ;
+
+
+
+
+
+
+
+
+
+        ?>
 
         <div<?= $view->attrs($attrs_page) ?>>
 

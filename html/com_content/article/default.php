@@ -11,10 +11,21 @@ HTMLHelper::addIncludePath(JPATH_COMPONENT . '/helpers');
 
 list($config, $view, $user) = app(Config::class, View::class, User::class);
 
+
+
+
+
+
+
+
+
+
+
 // Parameter shortcuts
 $item = $this->item;
 $params = $item->params;
 $uncategorised = $item->category_alias == 'uncategorised';
+
 
 // Heading
 if ($params->get('show_page_heading')) {
@@ -32,6 +43,10 @@ $article = [
 
 // Title
 $params->set('link_titles', false);
+
+
+
+
 
 // Content
 if ($params->get('access-view')) {
@@ -57,9 +72,15 @@ if ($params->get('access-view')) {
     $item->readmore = $params->get('show_readmore') && $item->fulltext;
 }
 
+
+
+
 // Icons
 if ($this->print) {
     $article['icons'] = ['print' => HTMLHelper::_('icon.print_screen', $item, $params)];
 }
 
-echo $view('~theme/templates/article' . ($uncategorised ? '{-page,}' : '{-blog,}'), $article);
+
+
+
+ echo $view('~theme/templates/article' . ($uncategorised ? '{-page,}' : '{-blog,}'), $article);

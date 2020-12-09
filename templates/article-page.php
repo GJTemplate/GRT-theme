@@ -46,7 +46,7 @@
     <div class="uk-margin-medium" property="text"><?= $content ?></div>
 
     <?php if ($tags) : ?>
-    <p class="uk-margin-medium"><?= JText::sprintf('TPL_YOOTHEME_TAGS', $tags) ?></p>
+    <p class="uk-margin-medium"><?= JText::sprintf('TPL_VISUALTHEME_TAGS', $tags) ?></p>
     <?php endif ?>
 
     <?php if ($readmore) : ?>
@@ -55,19 +55,23 @@
     </p>
     <?php endif ?>
 
-    <?php if ($created || $modified || $hits) : ?>
+    <?php
+
+
+
+        if ($created || $modified || $hits) : ?>
     <ul class="uk-list">
 
         <?php if ($created) : ?>
-            <li><?= JText::sprintf('TPL_YOOTHEME_META_DATE_CREATED', $created) ?></li>
+            <li><?= JText::sprintf('TPL_VISUALTHEME_META_DATE_CREATED', $created) ?></li>
         <?php endif ?>
 
         <?php if ($modified) : ?>
-            <li><?= JText::sprintf('TPL_YOOTHEME_META_DATE_MODIFIED', $modified) ?></li>
+            <li><?= JText::sprintf('TPL_VISUALTHEME_META_DATE_MODIFIED', $modified) ?></li>
         <?php endif ?>
 
         <?php if ($hits) : ?>
-            <li><?= JText::sprintf('TPL_YOOTHEME_META_HITS', $hits) ?></li>
+            <li><?= JText::sprintf('TPL_VISUALTHEME_META_HITS', $hits) ?></li>
         <?php endif ?>
 
     </ul>

@@ -61,6 +61,7 @@ $imagetpl = function ($attr) use ($image, $params) {
     <?php
 };
 
+
 ?>
 
 <article id="article-<?= $article->id ?>" class="uk-article"<?= $this->attrs(['data-permalink' => $permalink]) ?> typeof="Article">
@@ -141,15 +142,15 @@ $imagetpl = function ($attr) use ($image, $params) {
         <ul class="uk-list">
 
             <?php if ($created) : ?>
-                <li><?= JText::sprintf('TPL_YOOTHEME_META_DATE_CREATED', $created) ?></li>
+                <li><?= JText::sprintf('TPL_VISUALTHEME_META_DATE_CREATED', $created) ?></li>
             <?php endif ?>
 
             <?php if ($modified) : ?>
-                <li><?= JText::sprintf('TPL_YOOTHEME_META_DATE_MODIFIED', $modified) ?></li>
+                <li><?= JText::sprintf('TPL_VISUALTHEME_META_DATE_MODIFIED', $modified) ?></li>
             <?php endif ?>
 
             <?php if ($hits) : ?>
-                <li><?= JText::sprintf('TPL_YOOTHEME_META_HITS', $hits) ?></li>
+                <li><?= JText::sprintf('TPL_VISUALTHEME_META_HITS', $hits) ?></li>
             <?php endif ?>
 
         </ul>

@@ -21,6 +21,7 @@ $params = $this->params;
 $date = $params->get('tag_list_show_date');
 $length = $params->get('tag_list_item_maximum_characters');
 
+
 // Article template
 $article = $view('~theme/templates/article{-tag,}', function ($item) use ($params, $date, $length) {
     return [

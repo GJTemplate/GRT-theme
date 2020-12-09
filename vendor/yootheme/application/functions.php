@@ -16,6 +16,7 @@ if ($level = ini_get('xdebug.max_nesting_level')) {
  * @param string ...$ids
  *
  * @return mixed
+ * @throws \ReflectionException
  */
 function app($id = null, ...$ids) {
 

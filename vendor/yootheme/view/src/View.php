@@ -2,6 +2,7 @@
 
 namespace YOOtheme;
 
+
 class View implements \ArrayAccess
 {
     /**
@@ -79,6 +80,9 @@ class View implements \ArrayAccess
      */
     public function __call($name, $args)
     {
+
+
+
         if (!isset($this->functions[$key = strtolower($name)])) {
             trigger_error(sprintf('Call to undefined method %s::%s()', get_class($this), $name), E_USER_ERROR);
         }

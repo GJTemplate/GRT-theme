@@ -1,10 +1,10 @@
 {
     "name": "yootheme/pro",
-    "version": "2.3.21",
-    "title": "YOOtheme",
+    "version": "2.3.22",
+    "title": "VISUALtheme",
     "description": "A powerful, flexible and elegant website builder that allows you to create complex pages within minutes and customize every aspect of the theme.",
-    "homepage": "https://yootheme.com",
-    "copyright": "Copyright (C) YOOtheme GmbH",
+    "homepage": "https://gartes.ga/",
+    "copyright": "Copyright (C) VISUALtheme",
     "license": "GNU General Public License",
     "authors": [
         {

@@ -18,7 +18,7 @@ if (Path::get(__FILE__) !== $file = Path::get('~theme/html/plg_content_pagebreak
 ?>
 <div class="uk-grid-small uk-flex-middle uk-text-default" uk-grid>
 	<div>
-		<a class="uk-button uk-button-secondary" href="<?= $links['next'] ?>" aria-label="<?= $ariaLabel ?>" rel="next"><?= Text::_('TPL_YOOTHEME_NEXT_PAGE') ?></a>
+		<a class="uk-button uk-button-secondary" href="<?= $links['next'] ?>" aria-label="<?= $ariaLabel ?>" rel="next"><?= Text::_('TPL_VISUALTHEME_NEXT_PAGE') ?></a>
 	</div>
 
 	<?php

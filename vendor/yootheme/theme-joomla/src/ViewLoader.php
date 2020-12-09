@@ -152,7 +152,7 @@ class ViewLoader
                 $attribs = new Registry($article->attribs);
 
                 if (!$readmore->text = $attribs->get('alternative_readmore')) {
-                    $readmore->text = Text::_($params['show_readmore_title'] ? 'COM_CONTENT_READ_MORE' : 'TPL_YOOTHEME_READ_MORE');
+                    $readmore->text = Text::_($params['show_readmore_title'] ? 'COM_CONTENT_READ_MORE' : 'TPL_VISUALTHEME_READ_MORE');
                 }
 
                 if ($params['show_readmore_title']) {

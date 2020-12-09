@@ -112,7 +112,7 @@ $this->lists['limitBox'] = HTMLHelper::_('select.genericlist', [
     <div class="uk-grid-small uk-flex-middle uk-margin-medium" uk-grid>
         <?php if (!empty($this->searchword)) : ?>
         <div class="uk-width-expand@s">
-            <div class="uk-h3 "><?= Text::plural('TPL_YOOTHEME_SEARCH_RESULTS', $this->total) ?></div>
+            <div class="uk-h3 "><?= Text::plural('TPL_VISUALTHEME_SEARCH_RESULTS', $this->total) ?></div>
         </div>
         <?php endif ?>
 

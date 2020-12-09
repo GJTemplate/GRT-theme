@@ -30,7 +30,7 @@ class ComposerAutoloaderInit99614d5dea66ccb2c9657cb829e0fec
         if ($useStaticLoader) {
             require __DIR__ . '/autoload_static.php';
 
-            call_user_func(\YOOtheme\Autoload\ComposerStaticInit99614d5dea66ccb2c9657cb829e0fec8::getInitializer($loader));
+            call_user_func(\YOOtheme\Autoload\ComposerStaticInit99614d5dea66ccb2c9657cb829e0fec::getInitializer($loader));
         } else {
             $map = require __DIR__ . '/autoload_namespaces.php';
             foreach ($map as $namespace => $path) {
@@ -51,19 +51,19 @@ class ComposerAutoloaderInit99614d5dea66ccb2c9657cb829e0fec
         $loader->register(true);
 
         if ($useStaticLoader) {
-            $includeFiles = YOOtheme\Autoload\ComposerStaticInit99614d5dea66ccb2c9657cb829e0fec8::$files;
+            $includeFiles = YOOtheme\Autoload\ComposerStaticInit99614d5dea66ccb2c9657cb829e0fec::$files;
         } else {
             $includeFiles = require __DIR__ . '/autoload_files.php';
         }
         foreach ($includeFiles as $fileIdentifier => $file) {
-            composerRequire99614d5dea66ccb2c9657cb829e0fec8($fileIdentifier, $file);
+            composerRequire99614d5dea66ccb2c9657cb829e0fec($fileIdentifier, $file);
         }
 
         return $loader;
     }
 }
 
-function composerRequire99614d5dea66ccb2c9657cb829e0fec8($fileIdentifier, $file)
+function composerRequire99614d5dea66ccb2c9657cb829e0fec($fileIdentifier, $file)
 {
     if (empty($GLOBALS['__composer_autoload_files'][$fileIdentifier])) {
         require $file;

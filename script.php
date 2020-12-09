@@ -1,6 +1,6 @@
 <?php
 
-class grtthemeInstallerScript
+class visualthemeInstallerScript
 {
     protected $db;
     protected $tmp;
